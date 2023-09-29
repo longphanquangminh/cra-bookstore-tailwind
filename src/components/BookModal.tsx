@@ -11,8 +11,8 @@ import { useAppContext } from '../context/AppContext'
 
 export default function BookModal(props) {
   const [checkWrongName, setCheckWrongName] = useState(false)
-  const [checkWrongAuthor, setCheckWrongAuthor] = useState(false)
   const modalRef = useRef(null)
+  const [checkWrongAuthor, setCheckWrongAuthor] = useState(false)
 
   useEffect(() => {
     const handleClickOutside = (e) => {
